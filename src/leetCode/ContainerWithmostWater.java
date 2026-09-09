@@ -14,7 +14,7 @@ public class ContainerWithmostWater {
 			if(height[left] <= height[right]) {
 				left++;
 			} else {
-				right++;
+				right--;
 			}
 		}
 		return maxarea;
