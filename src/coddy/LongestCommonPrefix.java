@@ -4,6 +4,12 @@ import java.util.Arrays;
 
 public class LongestCommonPrefix {
 
+	public static void main(String[] args) {
+		String[] strs = {"flower","flow","flight"};
+		
+		System.out.println(findLongestCommonPrefix(strs));
+		
+	}
 	public static String findLongestCommonPrefix(String[] arr) {
 		if(arr == null || arr.length == 0) return "";
 		
@@ -15,7 +21,7 @@ public class LongestCommonPrefix {
 		String right = arr[arr.length - 1];
 		int index = 0;
 		
-		// Find the macthing characters from the beginning
+		// Find the matching characters from the beginning
 		while(index < left.length() && index < right.length()) {
 			if(left.charAt(index) == right.charAt(index)) {
 				index++;
