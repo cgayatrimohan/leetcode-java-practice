@@ -5,7 +5,14 @@ package leetCode;
  */
 public class FindSubsequence {
 
-	public boolean isSubsequence(String s, String t) {
+    public static void main(String[] args) {
+
+        String s = "abc";
+        String t = "ahbgdc";
+        System.out.println(isSubsequence(s, t));
+    }
+
+	public static boolean isSubsequence(String s, String t) {
 		int i = 0;
 		int j = 0;
 
