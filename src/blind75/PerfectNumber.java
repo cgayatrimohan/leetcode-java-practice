@@ -1,5 +1,7 @@
 package blind75;
-
+/** 
+ * sum of divisors = number excluding the number
+ */
 public class PerfectNumber {
 
 	public static void main(String[] args) {

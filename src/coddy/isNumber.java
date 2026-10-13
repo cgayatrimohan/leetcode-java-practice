@@ -6,6 +6,8 @@ public class isNumber {
 		System.out.println("Is the provided string number? " + findNumber(s));
 	}
 	public static boolean findNumber(String s) {
+		if(s.isEmpty()) return false;
+		
 		for(int i = 0; i < s.length(); i++) {
 			if(!Character.isDigit(s.charAt(i))) {
 				return false;
