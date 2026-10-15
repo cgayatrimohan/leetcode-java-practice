@@ -1,5 +1,8 @@
 package leetCode;
 
+/**
+ * ReveresePrefix -> leetCode = teelCode
+ */
 public class ReversePrefix {
 
 	public static void main(String[] args) {
@@ -10,12 +13,16 @@ public class ReversePrefix {
 	public static String reversePrefix(String word, char ch) {
         int index = word.indexOf(ch);
         
+        if(index <= -1) return word;
+
         StringBuilder result = new StringBuilder();
-        
-        for(int i = index - 1; i >= 0; i--) {
+   
+        // from index element to starting
+        for(int i = index - 1; i >= 0; i--) { 
         	result.append(word.charAt(i));
         }
         
+        // from index element to ending
         for(int i = index; i < word.length(); i++) {
         	result.append(word.charAt(i));
         }
