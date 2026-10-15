@@ -7,6 +7,12 @@ import java.util.Stack;
  */
 public class ReverseLetters {
 
+	public static void main(String[] args) {
+		String s = "ab-cd";
+		System.out.println(reverseOnlyLetters(s));
+		
+	}
+
 	public static String reverseOnlyLetters(String s) {
 		Stack<Character> letters = new Stack<>();
 		
