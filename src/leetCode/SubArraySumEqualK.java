@@ -4,7 +4,7 @@ import java.util.*;
 /**
  * 560. Subarray Sum Equals K
  */
-public class SubArraySumEqualK {
+public class SubarraySumEqualK {
 
 	public static void main(String[] args) {
 		int[] nums = {1,2,3};
