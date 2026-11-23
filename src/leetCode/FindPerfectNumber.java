@@ -1,7 +1,7 @@
 package leetCode;
 
 /**
- * 
+ * 507. Perfect Number
  */
 public class FindPerfectNumber {
 
