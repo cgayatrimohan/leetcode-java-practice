@@ -10,6 +10,8 @@ public class FindDuplicateNumber {
 	}
 
 	public static int findDuplicate(int[] nums) {
+		if(nums == null || nums.length <= 1) return 0;
+		
 		Set<Integer> unique = new HashSet<>();
 		
 		for(int x : nums) {
