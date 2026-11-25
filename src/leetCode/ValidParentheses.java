@@ -1,0 +1,39 @@
+package leetCode;
+
+import java.util.*;
+/**
+ * 20. Valid Parentheses
+ */
+public class ValidParentheses {
+
+	public static void main(String[] args) {
+		String s = "()[]{}";
+		System.out.println(isValid(s));
+
+	}
+	
+	private static boolean isValid(String s) {
+		Map<Character, Character> mappings = new HashMap<>();
+		mappings.put(']', '[');
+		mappings.put('}', '{');
+		mappings.put(')', '(');
+		
+		Stack<Character> stack = new Stack<>();
+		
+		for(int i = 0; i < s.length(); i++) {
+			char c = s.charAt(i);
+			
+			if(mappings.containsKey(c)) {
+				char topElement = stack.isEmpty() ? '#' : stack.pop();
+				
+				if(topElement != mappings.get(c)) {
+					return false;
+				}
+			} else {
+				stack.push(c);
+			}
+		}
+		return stack.isEmpty();
+	}
+
+}
